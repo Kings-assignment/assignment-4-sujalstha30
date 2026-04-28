@@ -5,7 +5,6 @@
 int main(){
     char *str;
     int size, length=0;
-    char *ptr;
 
     printf("Enter maximum size of the string:");
     scanf("%d", &size);
@@ -20,10 +19,10 @@ int main(){
     printf("Enter the string:");
     scanf("%s", str);
 
-    ptr=str;
-    while(*ptr !='\0'){
+    
+    while(*str !='\0'){
         length++;
-        ptr++;
+        str++;
     }
     printf("Length of string: %d\n", length);
 
